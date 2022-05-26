@@ -2,8 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="absolute bottom-0 w-full mx-auto">
-      <hr />
+    <div className="absolute bottom-0 w-full mx-auto border-t-2 border-black">
       <div className="mx-auto p-4">
         Copyright Ⓒ 2022{" "}
         <span>
