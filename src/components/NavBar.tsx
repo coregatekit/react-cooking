@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <div className="w-full text-black flex justify-between p-6 items-center border-b-2 border-black">
       <div className="text-2xl font-bold text-center">
-        <span className="block text-4xl">React Cooking</span>
+        <a href="/" className="block text-4xl">React Cooking</a>
       </div>
 
       <nav>
