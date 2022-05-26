@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
@@ -19,6 +21,7 @@ function App() {
           <Route path="search" element={<Search />} />
           <Route path=":id" element={<Menu />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
