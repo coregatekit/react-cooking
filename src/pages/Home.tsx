@@ -1,13 +1,32 @@
 import { TextField } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 
 function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+    console.log(searchQuery);
+  }
+
   return (
     <div className="container mx-auto">
-      <div className="text-xl3 font-bold underline">Hello World!</div>
-      <div>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      </div>
+        <div className="mt-40">
+          <div className="text-6xl text-left p-2">ค้นหาเมนูที่คุณต้องการ</div>
+          <div className="p-2">
+            <TextField
+              id="search-menu"
+              fullWidth
+              variant="standard"
+              placeholder="ผัดเปรี้ยวหวานหมูสับ..."
+              style={{ marginTop: 16}}
+              inputProps={{ style: {
+                fontSize: 40,
+              }}}
+              onInput={handleSearchQueryChange}
+            />
+          </div>
+        </div>
     </div>
   );
 }
