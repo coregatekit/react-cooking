@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import NotFound from "./pages/NotFound";
 import Search from "./pages/Search";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="search" element={<Search />} />
+          <Route path="about" element={<About />} />
           <Route path=":id" element={<Menu />} />
         </Routes>
         <Footer />
