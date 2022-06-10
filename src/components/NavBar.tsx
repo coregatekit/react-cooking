@@ -26,7 +26,7 @@ const NavBar = () => {
         <ul className="hidden md:flex gap-8">
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/search'>Search</Link></li>
-          <li><Link to='/'>About</Link></li>
+          <li><Link to='/about'>About</Link></li>
         </ul>
 
         <MenuItems showMenu={showMenu} active={active} />
