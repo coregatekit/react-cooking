@@ -8,6 +8,7 @@ import { MenuList } from "../components/MenuList";
 export interface IMenu {
   id: number;
   name: string;
+  description: string;
   ingredients: string[];
   methods: string[];
   image: string;
@@ -19,7 +20,7 @@ export interface IState {
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResult, setSearchResult] = useState<IMenu[]>([]);
+  const [searchResult, setSearchResult] = useState<IState['menus']>([]);
 
   const handleSearchQueryChange = (
     event: React.ChangeEvent<HTMLInputElement>

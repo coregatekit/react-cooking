@@ -20,11 +20,20 @@ export const MenuList: React.FC<IProps> = ({ menus }) => {
               <Typography variant="h5" className="mb-2">
                 {menu.name}
               </Typography>
+              <Typography>
+                {menu.description}
+              </Typography>
             </CardBody>
           </Card>
         </div>
       );
     });
   };
-  return <div className="flex justify-center">{renderList()}</div>;
+  return (
+    <div className="flex justify-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        {renderList()}
+      </div>
+    </div>
+  );
 };
