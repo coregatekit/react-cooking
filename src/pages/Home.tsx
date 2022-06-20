@@ -39,7 +39,7 @@ function Home() {
   return (
     <div>
       <div className="flex justify-center mt-16 mb-4">
-        <div className="text-center text-4xl">ผลการค้นหาสำหรับ</div>
+        <div className="text-center text-4xl">ค้นหาเมนูที่คุณต้องการ</div>
       </div>
       <div className="flex justify-center mt-2 mb-2">
         <div className="p-2">
