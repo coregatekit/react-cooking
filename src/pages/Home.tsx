@@ -6,7 +6,7 @@ import { menus } from "../data/menus";
 import { MenuList } from "../components/MenuList";
 
 export interface IMenu {
-  id: number;
+  id: string;
   name: string;
   description: string;
   ingredients: string[];
