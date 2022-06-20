@@ -16,13 +16,10 @@ const MenuItems = ({ showMenu, active }: Props) => {
         }
       >
         <li>
-          <Link to="/" onClick={showMenu}>Home</Link>
+          <Link className="text-4xl text-white" to="/" onClick={showMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/search" onClick={showMenu}>Search</Link>
-        </li>
-        <li>
-          <Link to="/" onClick={showMenu}>About</Link>
+          <Link className="text-4xl text-white" to="/about" onClick={showMenu}>About</Link>
         </li>
       </ul>
     </div>
