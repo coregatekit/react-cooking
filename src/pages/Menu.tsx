@@ -29,11 +29,21 @@ function MenuScreen() {
         />
         <div className="text-6xl">{menu.name}</div>
         <div className="text-xl">{menu.description}</div>
-        <div className="text-4xl">วิธีทำ</div>
+        <div className="text-4xl underline underline-offset-8">ส่วนประกอบ</div>
+        <div className="grid grid-cols-1 gap-6">
+          {menu.ingredients.map((ingredient, index) => {
+            return (
+              <div className="text-lg">
+                {index + 1}. {ingredient}
+              </div>
+            );
+          })}
+        </div>
+        <div className="text-4xl mt-8 underline underline-offset-8">วิธีทำ</div>
         <div className="grid grid-cols-1 gap-6">
           {menu.methods.map((method, index) => {
             return (
-              <div>
+              <div className="text-lg">
                 {index + 1}. {method}
               </div>
             );
