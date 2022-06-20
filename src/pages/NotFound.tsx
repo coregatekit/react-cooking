@@ -1,4 +1,4 @@
-function NotFound() {
+function NotFoundScreen() {
   return (
     <div className="flex justify-center items-center">
       <div className="text-center mt-24">
@@ -9,4 +9,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default NotFoundScreen;

@@ -1,4 +1,4 @@
-export const About = () => {
+export const AboutScreen = () => {
   return (
     <div className="container mx-auto px-5 py-5 justify-center">
       <h1 className="text-4xl font-bold underline p-4">About</h1>
@@ -23,4 +23,4 @@ export const About = () => {
   );
 };
 
-export default About;
+export default AboutScreen;
