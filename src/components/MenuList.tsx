@@ -6,19 +6,14 @@ import {
   Button,
 } from "@material-tailwind/react";
 import React from "react";
-import { createSearchParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { IMenu, IState as IProps } from "../pages/Home";
 
 export const MenuList: React.FC<IProps> = ({ menus }) => {
   let navigate = useNavigate();
 
   const handleOnClickMenu = (menu: IMenu) => {
-    navigate({
-      pathname: "menu",
-      search: `?${createSearchParams({
-        q: menu.id,
-      })}`,
-    });
+    navigate('/menu/' + menu.id);
   };
 
   const renderList = () => {
